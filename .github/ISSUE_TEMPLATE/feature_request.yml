@@ -1,0 +1,87 @@
+name: Feature Request
+description: Suggest an improvement or new capability for Starforge WebIDE
+title: "[Feature]: "
+labels:
+  - "type: enhancement"
+  - "status: needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement to Starforge WebIDE.
+
+        Please focus on the problem or workflow you are trying to improve.
+
+        Feature requests are considered as input to product planning. Submission of a request does not imply a commitment to implement it.
+
+        Do not include confidential, proprietary, export-controlled, classified, or customer-sensitive information.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: What problem are you trying to solve or what workflow are you trying to improve?
+      placeholder: "As a user, I need to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: requested-capability
+    attributes:
+      label: Requested Capability
+      description: Describe the capability you would like Starforge WebIDE to provide.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe how you expect the capability to work from the user's perspective.
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Why Is This Useful?
+      description: Explain how this capability would improve your workflow or user experience.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example
+      description: |
+        Provide an example, mock workflow, or minimal synthetic SysML v2 example if useful.
+
+        Do not include proprietary or customer-sensitive data.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or Workarounds
+      description: Are you currently using another approach or workaround?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other information that may help us understand the request.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission Checklist
+      options:
+        - label: I searched existing issues and did not find an equivalent request.
+          required: true
+        - label: I have not included confidential, proprietary, customer-sensitive, export-controlled, classified, or credential information.
+          required: true
