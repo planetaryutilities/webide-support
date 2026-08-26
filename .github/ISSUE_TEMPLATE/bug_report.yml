@@ -1,0 +1,135 @@
+name: Bug Report
+description: Report a reproducible problem with Starforge WebIDE
+title: "[Bug]: "
+labels:
+  - "type: bug"
+  - "status: needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem with Starforge WebIDE.
+
+        Before submitting:
+        - Search existing issues for duplicates.
+        - Do not include confidential, proprietary, export-controlled, ITAR-controlled, classified, or customer-sensitive information.
+        - Do not include passwords, tokens, API keys, credentials, or private keys.
+        - If a model is needed to reproduce the issue, use a minimal synthetic SysML v2 example.
+
+  - type: input
+    id: webide-version
+    attributes:
+      label: Starforge WebIDE Version
+      description: Enter the WebIDE version or build identifier, if known.
+      placeholder: "Example: 2.4.1"
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: Browser name and version.
+      placeholder: "Example: Chrome 151"
+    validations:
+      required: true
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: Operating system and version.
+      placeholder: "Example: Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem Description
+      description: Describe the problem clearly and concisely.
+      placeholder: "What happened?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide the steps required to reproduce the issue.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Enter ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: model-example
+    attributes:
+      label: Minimal SysML v2 Example
+      description: |
+        If applicable, provide a minimal synthetic SysML v2 example that reproduces the problem.
+
+        Do not include proprietary or customer data.
+      render: sysml
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Messages or Logs
+      description: |
+        Paste relevant error messages or logs.
+
+        Remove credentials, tokens, customer information, and other sensitive data before submitting.
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: |
+        Add screenshots if they help explain the problem.
+
+        Make sure screenshots do not contain confidential or sensitive information.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other information that may help reproduce or understand the issue.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission Checklist
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: I have removed confidential, proprietary, customer-sensitive, export-controlled, classified, and credential information from this report.
+          required: true
