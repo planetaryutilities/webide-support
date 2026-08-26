@@ -1,0 +1,80 @@
+name: Documentation Issue
+description: Report incorrect, missing, outdated, or unclear documentation
+title: "[Docs]: "
+labels:
+  - "type: documentation"
+  - "status: needs-triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report problems with Starforge WebIDE documentation.
+
+        This includes:
+        - Incorrect information
+        - Missing information
+        - Outdated documentation
+        - Unclear explanations
+        - Broken examples
+        - Broken links
+        - Suggested documentation improvements
+
+  - type: input
+    id: page
+    attributes:
+      label: Documentation Page
+      description: Provide the Wiki page, documentation section, or URL where the issue occurs.
+      placeholder: "Example: Wiki > User Manual > Model Navigation"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Type of Documentation Issue
+      options:
+        - Incorrect information
+        - Missing information
+        - Outdated information
+        - Unclear or confusing explanation
+        - Broken example
+        - Broken link
+        - Typographical or formatting issue
+        - New documentation request
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Description
+      description: Explain what is wrong, missing, or unclear.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Suggested Improvement
+      description: Describe what you believe the documentation should say or explain.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add examples or other information that may help improve the documentation.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission Checklist
+      options:
+        - label: I searched existing issues and did not find a duplicate.
+          required: true
+        - label: I have not included confidential, proprietary, customer-sensitive, export-controlled, classified, or credential information.
+          required: true
