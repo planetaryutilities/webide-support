@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Starforge WebIDE Documentation
+    url: https://github.com/planetaryutilities/webide-support/wiki
+    about: Check the user manual, FAQ, troubleshooting information, and other documentation before opening an issue.
+
+  - name: Security Vulnerability
+    url: https://github.com/planetaryutilities/webide-support/security/policy
+    about: Do not report security vulnerabilities publicly. Review the security policy for private reporting instructions.
